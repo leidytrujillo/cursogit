@@ -1,0 +1,132 @@
+/* reset basico*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+
+*/
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    font-weight: bold;
+    background-color: #f4f6f7;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+h1{
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    color: #e74c3c;
+    background-color: #fadbd8;
+    width: 80%;
+    box-shadow: 20px 20px 20px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+h1:hover{
+    transform: scale(1.1);
+    cursor:no-drop;
+}
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    box-shadow: 20px 20px 20px rgba(0,0,0,0.2);
+    width: 50%;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: #fadbd8;
+    color: black;
+}
+
+label{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+select{
+    padding: 5px;
+    border-radius: 8px;
+    transition: 0.5s;
+    cursor: pointer;
+    width: 40%;
+}
+
+input{
+    padding: 5px;
+    border-radius: 8px;
+    width: 40%;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-bottom: 20px;
+}
+
+.volver{
+    text-align: center;
+    padding: 10px;
+}
+
+.volver .boton-v{
+    padding: 10px;
+    width: 40%;
+    border-radius: 15px;
+    background-color: #e74c3c;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.volver .boton-v:hover{
+    transform: scale(1.1);
+    background-color: #c0392b;
+    color: white;
+}
+
+.eliminar{
+    width: 45%;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    color: white;
+    background-color: #e74c3c;
+    transition: 0.5s;
+}
+
+button:hover{
+    transform: scale(1.1);
+    background-color: #c0392b;
+    color: white;
+}
+
+

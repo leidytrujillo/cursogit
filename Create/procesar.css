@@ -1,0 +1,27 @@
+body{
+    background-color: white;
+    font-family: sans-serif;
+}
+
+.titulo {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+    padding: 5px;
+}
+
+h1{
+    text-align: center;
+    color: green;
+}
+
+.error h1{
+    color: red;
+}
+
+h2{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 25px;
+    padding: 5px;
+}

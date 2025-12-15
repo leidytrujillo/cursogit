@@ -1,0 +1,220 @@
+/* reset basico*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Centrar el contrainer del formulario en el centro de la pantalla: 
+        -se usa flex para el control del contenido
+        - el justify-contents y el aling-items para el centrado perfecto
+        -height de 100vh para que ocupe toda la altura de la pantalla 
+        - crcial poner la fuente siempre en el body para que todos los elementos la tengan
+*/
+body{
+    display: flex;
+    background: linear-gradient(100deg, #AED6F1, #2E4053);
+    backdrop-filter: blur(30px);
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+}
+
+.volver {
+    text-align: center;
+    padding: 10px;
+    width: 150px;
+}
+
+/*  este es el contenedor principal (el form):
+        -width fijo de (cantidad) para que no se deforme
+        - padding para el espacio interno
+        - border-radius para tener esquinas redondeadas
+        - box-shadow para dar un efecto de elevacion
+        - alrtura fija para mejor estetica
+        - display-flex p[ara tener mas control
+        - flex-direction:column paa que se acomoden uno encima del otro
+        - text-aling: center para centrar el texto
+*/
+
+.contenedor{
+    position: absolute;
+    right: 35%;
+    top: 15%;
+    transform: trabslatey(-50%); /* para centrar el contenedor verticalmente */
+}
+.Form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 400px;
+    padding: 45px;
+    color: black;
+    background-color: #f1f1f1;
+    border-radius: 25px;
+    box-shadow: 0 25px 30px rgba(0,0,0, 0.15);
+}
+
+
+/* el titulo:
+    - se pone el color de la letra que sea amigable con el contenido
+    - un font-size de 36pc para que el titulo se vea grande y como un titulo
+    - un margin-right para que se separe del container de form
+*/
+
+.contenedor_titulo{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+}
+.titulo {
+    color: #34495E;
+    font-size: 36px;
+    height: 50px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.titulo:hover{
+    transform: scale(1.1);
+    cursor:default;
+}
+
+.subtitulo {
+    margin-bottom: 20px;
+}
+
+input{
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid black;
+    background-color: #f1f1f1;
+    margin-bottom: 10px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+input:focus {
+    border-color: #5c67f2;
+    outline: none;
+}
+
+
+select {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+select:focus {
+    border-color: #5c67f2;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid black;
+    transition: 0.5s;
+    cursor: pointer;
+    color: white;
+    background-color: #34495E;
+}
+
+button:hover{
+    background-color: #AED6F1;
+   color: black;
+}
+
+
+/* Tablets y pantallas medianas */
+@media screen and (max-width: 1000px) {
+    
+    .Form{
+        font-size: 24px;
+    }
+
+    .contenedor_titulo{
+        position: absolute;
+        top: 10%;
+        left: 34%;
+    }
+
+    .contenedor{
+        margin-top: 20px;
+        position: absolute;
+        top: 13%;
+    }
+}
+
+/* Pantallas grandes */
+@media screen and (min-width: 1024px) {
+    .Form{
+        font-size: 24px;
+    }
+
+    .contenedor_titulo{
+        position: absolute;
+        top: 50%;
+        left: 15%;
+    }
+
+    .contenedor{
+        margin-top: 20px;
+        position: absolute;
+        top: 4%;
+        left: 40%;
+    }
+}
+
+
+@media screen and (min-width: 1440px) {
+    .Form{
+        font-size: 24px;
+    }
+
+    .contenedor_titulo{
+        position: absolute;
+        top: 44%;
+        left: 23%;
+    }
+
+    .contenedor{
+        margin-top: 20px;
+        position: absolute;
+        top: 4%;
+        left: 40%;
+    }
+}
+
+@media screen and (min-width: 1445px) {
+    .Form{
+        font-size: 12px;
+    }
+
+    .contenedor_titulo{
+        position: absolute;
+        top: 47%;
+        left: 23%;
+    }
+
+    .contenedor{
+        margin-top: 20px;
+        position: absolute;
+        top: 5%;
+        left: 40%;
+    }
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Eliminar Usuario</title>
+    <link rel="stylesheet" href="borrar.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <div class="titulo">
+        <h1>Eliminar Usuario</h1>
+    </div>
+    <div class="formulario">
+        <form method="post" action="borrar.php" id="form-eliminar">
+            <label for="tipo_usuario">Tipo de usuario:</label>
+            <select name="tipo_usuario" id="tipo_usuario" required>
+                <option value="" disabled selected>Seleccione su rol</option>
+                <option value="cliente">Cliente</option>
+                <option value="vendedor">Vendedor</option>
+                <option value="domiciliario">Domiciliario</option>
+            </select>
+
+            <label for="correo">Ingrese su correo:</label>
+            <input type="text" name="correo" id="correo" required>
+
+            <button class="eliminar" type="submit">Eliminar</button>
+        </form>
+    </div>
+
+    <footer>
+        <div class="volver">
+            <a href="/menu.html">
+                <button class="boton-v">
+                    Volver al menú
+                </button>
+            </a>
+        </div>
+    </footer>
+    <script defer src="borrar2.js"></script>
+</body>
+</html>

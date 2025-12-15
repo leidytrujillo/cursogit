@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registro de Usuarios</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+    <header>
+        <div class="volver">
+            <a href="/menu.html">
+                <button class="boton-v">
+                    Volver al menu
+                </button>
+            </a>
+    </header>
+
+    <main>
+
+    </main>
+    <div class="contenedor_titulo">
+        <h1 class="titulo">Registrarse</h1>
+
+    </div>
+    
+    <div class="contenedor">
+        <div class="Form">
+
+            <h2 class="subtitulo">
+                Bienvenido
+            </h2>
+    
+            <form action="procesar.php" method="POST">
+    
+                <input type="text" placeholder="Como te llamas?" id="nombres" name="nombres" required><br><br>
+                
+                <input type="text" placeholder="Cual es tu apellido?" id="apellidos" name="apellidos" required><br><br>
+    
+                <input type="number" placeholder="Tu numero de documento" id="documento" name="documento" required><br><br>
+    
+                <input type="number" placeholder="Tu numero de telefono" id="telefono" name="telefono" required><br><br>
+    
+                <input type="email" placeholder="Tu correo electronico" id="correo" name="correo" required><br><br>
+    
+                <input type="password" placeholder="Tu contraseña" id="contrasena" name="contrasena" required><br><br>
+    
+    
+                <select id="rol" name="rol" required>
+                    <option value="" disabled selected>selecciona tu rol</option>
+                    <option value="cliente">Cliente</option>
+                    <option value="vendedor">Vendedor</option>
+                    <option value="domiciliario">Domiciliario</option>
+                </select><br><br>
+    
+                <button type="submit">Registrar</button>
+            </form>
+        </div>
+    </div>  
+</body>
+</html>
